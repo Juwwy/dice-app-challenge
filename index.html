@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Dice Game</title>
+  </head>
+  <body>
+    <main id="main" class="hidden">
+      <section class="player player--0 ">
+        <h2 class="name" id="name--0">Player 1</h2>
+        <p class="score" id="score--0">43</p>
+        <div class="current">
+          <p class="current-label">Current</p>
+          <p class="current-score" id="current--0">0</p>
+        </div>
+      </section>
+      <section class="player player--1">
+        <h2 class="name" id="name--1">Player 2</h2>
+        <p class="score" id="score--1">24</p>
+        <div class="current">
+          <p class="current-label">Current</p>
+          <p class="current-score" id="current--1">0</p>
+        </div>
+      </section>
+
+      <img src="images/dice-5.png" alt="Playing dice" class="dice" />
+      <img src="images/dice-4.png" alt="Playing dice" class="diceA" />
+      <button class="btn btn--new">🔄 New game</button>
+      <button class="btn btn--roll">🎲 Roll dice</button>
+      <button class="btn btn--hold">📥 Hold</button>
+    </main>
+    <section class="container">
+      <div>
+        <form id="input-field">
+          <p>Create an account</p>
+          <label for="username">Username</label><br>
+          <input type="text" id="usernameA1" required placeholder="Player 1 Enter your username"><br><br>
+          <input type="text" id="usernameB2" required placeholder="Player 2 Enter your username"><br><br>
+          <label for="email" >E-mail</label><br>
+          <input type="email" id="email" ><br>
+          <label for="score" >Set Target</label><br>
+          <input type="number" id="set-score"><br><br>
+          <input type="button" id="pass" value="submit">
+
+        </form>
+      </div>
+    </section>
+    <script src="js/script.js"></script>
+  </body>
+</html>
